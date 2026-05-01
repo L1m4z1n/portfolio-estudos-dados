@@ -1,0 +1,12 @@
+# Visual Studio / SQL Server local
+.vs/
+SQL/.vs/
+
+# Arquivos grandes / instaladores / backups
+*.exe
+*.bak
+*.mdf
+*.ldf
+*.zip
+*.rar
+*.7z

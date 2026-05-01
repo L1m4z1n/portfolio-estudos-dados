@@ -1,0 +1,4 @@
+SELECT
+	COUNT(DISTINCT BrandName)
+FROM
+	DimProduct
