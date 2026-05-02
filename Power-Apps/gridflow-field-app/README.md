@@ -69,3 +69,9 @@ gridflow-field-app/
 │   └── 08-registros-salvos-offline.jpeg
 └── docs/
     └── fluxo-da-aplicacao.md
+
+## Demonstração
+
+A demonstração em vídeo do funcionamento do app está disponível no LinkedIn:
+
+[Ver demonstração no LinkedIn](https://www.linkedin.com/posts/gabrielimalmeida_powerapps-powerplataform-sharepoint-ugcPost-7456357059081453568-XHUB)    
