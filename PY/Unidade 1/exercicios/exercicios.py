@@ -33,13 +33,20 @@ comprimento_sala = int(input("Informe o comprimento da sala:"))
 area = largura_sala * comprimento_sala
 print(f"A sala possui {area} m²")
 #### 7. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
-
+ganho = int(input("Quanto você ganha por hora:"))
+horas_trabalhadas = int(input("Quantas horas trabalhadas:"))
+salario = ganho * horas_trabalhadas
+print(salario)
 #### 8. Vamos criar um conversor de temperatura. Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.
 #$C = \frac{5}{9}(F-32)$
-
+temp_fahrenheit = float(input("Temperatura(Fº): "))
+fahrenheit = (temp_fahrenheit-32)*5/9
+print(fahrenheit)
 #### 9. Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.
 #$F = \frac{9}{5}C + 32$
-
+temp_celsius = float(input("Temperatura(Cº): "))
+fahrenheit = ((9/5)*temp_celsius)+32
+print(fahrenheit)
 #### 10. Tendo como dados de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula:
 #$P = 72,7h - 58$
 #Lembrando que "algoritmo" nada mais é do que um programa, como todos os outros que você vem fazendo
