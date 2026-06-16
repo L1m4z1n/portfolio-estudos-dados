@@ -1,3 +1,2 @@
-exto todo em letra maiuscula
-texto = 'beb123123'
-print(texto.upper())
+texto = '1000.0'
+print(texto.replace('.',','))
