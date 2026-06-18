@@ -21,3 +21,22 @@ print(f'Vendas do produto {produtos[3]} foram de {vendas[3]}')
 
 texto = 'gabriel@gmail.com'
 print(texto[1])
+
+# Como descobrir o índice de um item de uma lista
+# i = lista.index('item')
+
+produtos = ['TV','Celular','mouse','teclado','tablet']
+estoque = [100,150,100,120,70,90,80]
+
+i = produtos.index('Celular')
+qtd_estoque = estoque[i]
+print(f'Quantidade do {produtos[i]} em estoque é de {qtd_estoque}')
+
+# Exercicio
+produto = input("Digite o nome do produto:")
+if produto in produtos:
+    i = produtos.index(produto)
+    qtd_estoque= estoque[i]
+    print(f"Temos {qtd_estoque} unidades de {produto} no estoque")
+else:
+    print('Nome do produto não existe no estoque')
