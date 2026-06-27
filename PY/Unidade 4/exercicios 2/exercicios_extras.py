@@ -34,6 +34,7 @@ else:
 # - Caso o produto exista na lista de produtos, o programa deve retornar o preço do produto como resposta
 #        - Ex: O produto celular custa R$1500
 # - Caso o produto não exista na lista de produtos, o programa deve printar uma mensagem para o usuário tentar novamente
+'''
 
 produtos = ["celular", "camera", "fone de ouvido", "monitor"]
 precos = [1500, 1000, 800, 2000]
@@ -48,6 +49,7 @@ if nome_produto in produtos:
 else:
     print('Produto inexistente, tente novamente!!!')
 
+'''
 # Exercício 3
 # Crie um sistema de consulta de bônus dos funcionários
 # Seu sistema deve:
@@ -57,13 +59,24 @@ else:
 #       - Se o funcionário vendeu mais de 5000 unidades, ele ganha R$2 de bônus para cada unidade + um valor fixo de R$1000
 #       - Se o funcionário vendeu menos de 1000 unidades, ele não ganha bônus
 # - Printar no final o valor do bônus do funcionário
+'''
+qtd_vendas = int(input("Quantas vendas por funcionarios: "))
 
+if qtd_vendas >= 5000:
+    bonus_func = (qtd_vendas * 2) + 1000
+    print(f"Bonus do funcionario: {bonus_func}")
 
+elif qtd_vendas >= 1000:
+    bonus_func = qtd_vendas * 2
+    print(f"Bonus funcionario: {bonus_func}")
+elif qtd_vendas < 1000:
+    print("Sem bonus")
+'''
 # Exercício 4
 # Crie um programa que consiga descobrir qual dos vendedores vendeu mais
 # As vendas dos vendedores são listas com a quantidade vendida por cada vendedor
 
-vendas = [
+vendas = [                                                                                                                                                  
     [10, 20, 100, 80, 90, 100, 20, 30, 44, 55, 33, 34, 100, 90, 80, 39, 87, 45, 50, 50, 50, 50, 40, 30, 3, 93, 39, 49, 88],    
     [100, 1, 1, 4, 5, 90, 100, 20, 4, 5, 100, 100, 100, 100, 100, 93, 20, 15, 40, 90, 90, 90, 90, 90, 90, 33, 22, 44, 43, 34],
 ]
