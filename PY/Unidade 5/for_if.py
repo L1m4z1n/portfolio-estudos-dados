@@ -14,4 +14,6 @@ qtd_meta = 0
 for venda in vendas:
     if venda >= meta:
         qtd_meta +=1
-        print(f'{qtd_meta}: {venda}')
+        qtd_funcionarios = len(vendas)
+        porcent_meta_batida = qtd_meta/qtd_funcionarios
+        print(f'{qtd_meta}: {venda}\nPorcentagem de meta batida: {porcent_meta_batida:.1%}')
