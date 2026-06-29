@@ -15,3 +15,12 @@ for i in range(len(precos)):
     produto = produtos[i]
     preco = precos[i]
     print(produto,preco)
+
+# For item in lista com enumerate
+
+# preco de cada produto com imposto
+
+for i,preco in enumerate(precos):
+    i += 1
+    produto = produtos[i]
+    print(f"{i}: {preco * 1.1}")
