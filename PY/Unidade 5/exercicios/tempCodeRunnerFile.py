@@ -1,10 +1,13 @@
-nome_hospede = input("Digite seu nome: ")
-qtd_convidados = int(input("Quantas pessoas no quarto: "))
+meta = 10000
+vendas = [
+    ['João', 15000],
+    ['Julia', 27000],
+    ['Marcus', 9900],
+    ['Maria', 3750],
+    ['Ana', 10300],
+    ['Alon', 7870],
+]
 
-quarto = []
-
-for qtd in range(qtd_convidados):
-    convidado = input("Nome convidado: ")
-    cpf = input("Digite o CPF: ")
-    quarto.append([convidado, f"cpf: {cpf}"])
-    print(quarto)
+for vendedor in vendas:
+    if vendedor[1] >= meta:
+        print(f"{vendedor[0]} bateu a meta com {vendedor[1]} em vendas!")
