@@ -1,0 +1,104 @@
+{
+  "name": "MCPServer",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "servidoratendimento"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 2,
+      "position": [
+        80,
+        -144
+      ],
+      "id": "9bbdced9-5c84-4e0b-b866-6ef900f7b890",
+      "name": "MCP Server Trigger",
+      "webhookId": "38adf6af-4ba6-4cfc-a6df-439d69c6163c"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Esta tool deve ser utilizada para recuperar formas de pagamento",
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "XfdScF0bX4N5RgE4",
+          "mode": "list",
+          "cachedResultName": "formaspagamento",
+          "cachedResultUrl": "/projects/aNSwsjoYbsAIj25m/datatables/XfdScF0bX4N5RgE4"
+        },
+        "matchType": "allConditions",
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTableTool",
+      "typeVersion": 1.1,
+      "position": [
+        176,
+        64
+      ],
+      "id": "60bcec7d-d49e-44a0-b23e-849604d0b0d2",
+      "name": "formaspagamento"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Utilize esta ferramenta para obter os horários de atendimento",
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "6R6BsOJonok5yAhn",
+          "mode": "list",
+          "cachedResultName": "horarios",
+          "cachedResultUrl": "/projects/aNSwsjoYbsAIj25m/datatables/6R6BsOJonok5yAhn"
+        },
+        "matchType": "allConditions",
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTableTool",
+      "typeVersion": 1.1,
+      "position": [
+        368,
+        16
+      ],
+      "id": "3dd57796-3872-4b85-b84d-910dec2e5c84",
+      "name": "horarios"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "formaspagamento": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "horarios": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "1359f51a-66db-40ee-a9a8-87ed0a0bc8d5",
+  "meta": {
+    "instanceId": "93d8f97e6a5360cb307cbf2c230ea540e063223ca47a568194c42e9ead8425b4"
+  },
+  "id": "FL560rNCDE3LbWg7f2FUI",
+  "tags": []
+}

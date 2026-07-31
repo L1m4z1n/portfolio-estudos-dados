@@ -10,3 +10,19 @@ SQL/.vs/
 *.zip
 *.rar
 *.7z
+repo-limpo/
+*.env
+Ciência de Dados/Formação CD/37.Agentes e LLMs - Prática em Python/3.GPT.ipynb
+Ciência de Dados/Formação CD/37.Agentes e LLMs - Prática em Python/AgenteRAGEspecializado.ipynb
+
+# Arquivos locais/sensíveis
+*.env
+.env
+.env.*
+
+# Repositório temporário
+repo-limpo/
+
+# Notebooks com credenciais
+3.GPT.ipynb
+AgenteRAGEspecializado.ipynb
