@@ -52,7 +52,17 @@ def minha_funcao(arg1: isso, arg2: aquilo) -> o que a função retorna:
 ...
 return ...
 '''
-'''
-def minha_funcao(num1,'primeiro número a ser somado', num2: int, num3: int) -> int:
+
+def minha_funcao(num1: 'primeiro número a ser somado', num2: int, num3: int) -> int:
+    """
+    Soma três números inteiros.
+
+    Args:
+        num1 (int): primeiro número a ser somado
+        num2 (int): segundo número
+        num3 (int): terceiro número
+
+    Returns:
+        int: resultado da soma
+    """
     return num1+num2+num3
-'''
