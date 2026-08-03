@@ -36,4 +36,4 @@ def preco_final(preco, **adicionais):
         preco *= (1+ adicionais['imposto'])
     return preco
 
-print(preco_final(1000, desconto=0.1))
+print(preco_final(1000, desconto=0.1,garantia_extra = 100, imposto=0.3))
