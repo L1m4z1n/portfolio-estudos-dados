@@ -1,25 +1,20 @@
-from datetime import datetime, date
-import locale
-locale.setlocale(locale.LC_TIME,"pt_BR")
 
-# Pegando a data atual
-dia_hoje = date.today()
-print(dia_hoje)
+from datetime import datetime
+from zoneinfo import ZoneInfo  
 
-# Obtendo informações das últimas transações
-dia = int(input("Dia da última transação: "))
-mes = int(input("Mês da última transação: "))
-ano = int(input("Ano da última transação: "))
 
-# Organizando as datas
-data_organizada = date(ano,mes,dia)
+def esta_aberto(hora_local):
+    if 9 <= hora_local.hour < 17:
+        return "Aberto"
+    else:
+        return "Fechado"
 
-# Formato string
-data_formatada = data_organizada.strftime("%d de %B de %Y")
 
-tempo_transacao = dia_hoje - data_organizada 
+sao_paulo = datetime.now(ZoneInfo("America/Sao_Paulo"))
+nova_york = datetime.now(ZoneInfo("America/New_York"))
+toquio = datetime.now(ZoneInfo("Asia/Tokyo"))
 
-if tempo_transacao.days >= 30:
-    print("Você obteve desconto")
-else:
-    print("Em dia")
+print("São Paulo:", sao_paulo.strftime("%d/%m/%Y %H:%M"), "-", esta_aberto(sao_paulo))
+print("Nova York:", nova_york.strftime("%d/%m/%Y %H:%M"), "-", esta_aberto(nova_york))
+print("Tóquio:", toquio.strftime("%d/%m/%Y %H:%M"), "-", esta_aberto(toquio))
+
