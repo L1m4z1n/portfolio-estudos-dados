@@ -1,24 +1,18 @@
-import random
-import string
+# QR Code com imagem
 
-def gerar_senha(tamanho):
-    if tamanho < 4:
-        print("O tamanho da senha deve ser de pelo menos 4 caracteres")
-    else:
-        senha = [
-            random.choice(string.ascii_letters),
-            random.choice(string.digits),
-            random.choice(string.punctuation),
-        ]
-
-    possibilidades = "".join([string.ascii_letters, string.digits, string.punctuation])
-    senha.extend(random.choices(possibilidades, k=tamanho-3))
-
-    random.shuffle(senha)
-    return "".join(senha)
+import qrcode
+from qrcode.image.styledpil import StyledPilImage
 
 
 
 
-tamanho = int(input("Digite o comprimento da senha:"))
-print(gerar_senha(tamanho))
+qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
+qr.add_data("https://www.instagram.com/olim4gabriel/")
+
+imagem = qr.make_image(
+    image_factory=StyledPilImage,
+    embeded_image_path="logo.png"
+)
+
+
+imagem.save("qrcode_logo.png")
