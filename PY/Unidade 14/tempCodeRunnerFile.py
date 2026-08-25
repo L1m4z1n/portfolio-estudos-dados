@@ -1,7 +1,3 @@
-produtos = ['apple tv', 'mac', 'IPhone x', 'IPhone 11', 'IPad', 'apple watch', 'mac book', 'airpods']
-produtos.sort()
-print(produtos)
 
-# Como fariamos para ordenar corretamente?
-produtos.sort(key=str.casefold)
-print(produtos)
+preco_imposto2 = lambda preco: preco * (1.0 + 0.3)
+print(preco_imposto2(100))
