@@ -1,6 +1,5 @@
+import numpy as np
 
-lista = [1,"dois",3.0]
-print(type(lista))
+array = np.array([1,2,3,4,5])
 
-for elemento in lista:
-    print(type(elemento))
+print(array)
