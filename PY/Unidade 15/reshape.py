@@ -22,4 +22,23 @@ print(vendas_reshaped.ndim)# Numero de direções
 
 print(vendas_reshaped.shape)#Comprimento/forma
 
+# DOM SEG TER QUA QUI SEX SAB
 
+print(vendas_reshaped.sum(axis=0))
+
+# Exemplo
+'''
+Considere que uma loja funciona de segunda a sábado, independentemente de feriados. Nos últimos 30 dias, teve o menor volume de vendas sendo 20 e o maior sendo 200. Crie uma simulação das vendas desses últimos 30 dias, separando por semanas. Calcule:
+- o total de vendas por semana
+- a média de vendas por semana
+- a média de vendas por dia da semana
+
+'''
+import numpy as np
+rng = np.random.default_rng(seed=42)
+vendas = rng.integers(low=20,high=200,size=30,endpoint=True)
+print(vendas)
+# Pelo enunciado, o padrão de dias é:
+# seg, ter, qua, qui, sex, sab, seg, ter, qua, qui, sex, sab, ...
+vendas_semanais = np.reshape(vendas,(-1,6))
+print(vendas_semanais)
