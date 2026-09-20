@@ -1,0 +1,11 @@
+# Temporários / sistema
+~$*
+.DS_Store
+Thumbs.db
+
+# Arquivos de cache/exportações locais
+*.tmp
+*.bak
+
+# Opcional: remova esta linha se quiser versionar o PBIX
+# *.pbix
