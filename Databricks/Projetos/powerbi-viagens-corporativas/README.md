@@ -1,4 +1,4 @@
-# ✈️ Dashboard de Viagens Corporativas
+# Dashboard de Viagens Corporativas
 
 Projeto de portfólio voltado à análise de viagens corporativas, com **tratamento de dados no Databricks**, arquitetura **Bronze / Silver / Gold**, consumo no **Power BI** e um **Assistente de Viagens com Databricks Genie**, integrado por **Power Apps + Power Automate**.
 
@@ -6,7 +6,7 @@ Projeto de portfólio voltado à análise de viagens corporativas, com **tratame
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 Construir uma solução capaz de:
 
@@ -22,7 +22,7 @@ Construir uma solução capaz de:
 
 ---
 
-## 🧱 Arquitetura
+## Arquitetura
 
 ```mermaid
 flowchart LR
@@ -60,7 +60,7 @@ A camada **Gold** é o principal ponto de consumo do projeto. Ela foi estruturad
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - Databricks
 - PySpark
@@ -77,7 +77,7 @@ A camada **Gold** é o principal ponto de consumo do projeto. Ela foi estruturad
 
 ---
 
-## 📂 Organização dos notebooks
+## Organização dos notebooks
 
 ```text
 01_setup_ambiente
@@ -97,7 +97,7 @@ Mais detalhes em [`docs/databricks.md`](docs/databricks.md).
 
 ---
 
-## 🥉 Bronze
+## Bronze
 
 Camada de entrada dos arquivos brutos.
 
@@ -109,7 +109,7 @@ Exemplo:
 
 ---
 
-## 🥈 Silver
+## Silver
 
 Responsável por:
 
@@ -138,7 +138,7 @@ silver.revisao_humana_justificativas
 
 ---
 
-## 🥇 Gold
+## Gold
 
 ### Fatos
 
@@ -178,7 +178,7 @@ gold.auditoria_justificativas
 
 ---
 
-## 🧠 Classificação de justificativas
+## Classificação de justificativas
 
 O processo utiliza **regras + LLM + revisão humana**.
 
@@ -216,7 +216,7 @@ Resultados da base demonstrativa:
 
 ---
 
-## 📊 Power BI
+## Power BI
 
 ### Páginas
 
@@ -246,7 +246,7 @@ Mais detalhes em [`docs/powerbi.md`](docs/powerbi.md).
 
 ---
 
-## 🤖 Assistente de Viagens
+## Assistente de Viagens
 
 ```text
 Power BI
@@ -289,7 +289,7 @@ Mais detalhes em [`docs/assistant-genie.md`](docs/assistant-genie.md).
 
 ---
 
-## 🎛️ Contexto dos filtros
+## Contexto dos filtros
 
 ```text
 Contexto Ano
@@ -313,7 +313,7 @@ Quanto foi gasto com passagens?
 
 ---
 
-## 📈 Indicadores principais
+## Indicadores principais
 
 ```text
 Valor total: R$ 110.400,17
@@ -325,7 +325,7 @@ Uber: R$ 2.873,44
 
 ---
 
-## 🧭 Boas práticas aplicadas
+## Boas práticas aplicadas
 
 - separação por camadas;
 - consumo orientado à Gold;
@@ -340,7 +340,7 @@ Uber: R$ 2.873,44
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 Sugestão:
 
@@ -366,7 +366,7 @@ Uso no README:
 
 ---
 
-## 🔐 Segurança
+## Segurança
 
 Não versionar:
 
@@ -380,7 +380,7 @@ Não versionar:
 
 ---
 
-## 📁 Estrutura sugerida
+## Estrutura sugerida
 
 ```text
 viagens-corporativas/
@@ -399,7 +399,7 @@ viagens-corporativas/
 
 ---
 
-## 🚀 Próximas evoluções
+## Próximas evoluções
 
 - ingestão automatizada;
 - Databricks Jobs / Workflows;
@@ -412,12 +412,12 @@ viagens-corporativas/
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 Este projeto utiliza dados fictícios/sanitizados. Nomes, valores, agências, viajantes e demais registros não devem ser interpretados como dados operacionais reais de qualquer organização.
 
 ---
 
-## 👨‍💻 Foco do projeto
+## Foco do projeto
 
 **Engenharia de Dados • Business Intelligence • Analytics • Automação • IA aplicada a dados**
